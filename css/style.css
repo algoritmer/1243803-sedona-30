@@ -1,0 +1,228 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-white: #FFFFFF;
+  --basic-blue: #81B3D2;
+  --basic-gray: #EEEEEE;
+  --basic-brown: #766357;
+
+  --special-brown-light: #604E43;
+  --special-brown-dark: #503E33;
+  --special-blue-dark: #669EC0;
+  --special-blue-middle: #5496BD;
+  --special-white-transparent: rgba(255, 255, 255, 0.9);
+  --special-black-transparent: rgba(35, 31, 32, 1);
+  --special-blue-transparent: rgba(129, 179, 210, 1);
+  --special-gray-transparent: rgba(189, 187, 188, 1);
+
+
+
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover {
+  color: var(--special-blue-dark)
+}
+
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* About us */
+
+.about-us {
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.about-us p {
+  font-weight: 400;
+  line-height: 26px;
+}
+
+/* Feature one */
+
+.feature-one {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  text-align: center;
+}
+
+.feature-one h2 {
+  font-size: 21px;
+}
+
+.feature-one p {
+  font-weight: 400;
+}
+
+/* Feature two */
+.feature-two {
+  text-align: center;
+}
+
+.feature-two-list {
+  list-style: none;
+}
+
+.feature-two-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-two-item p {
+  font-weight: 400;
+}
+
+/* Feature three */
+
+.feature-three {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  text-align: center;
+}
+
+.feature-three h2 {
+  font-size: 21px;
+}
+
+.feature-three p {
+  font-weight: 400;
+}
+
+/* Feature four */
+.feature-four {
+  text-align: center;
+}
+
+.feature-four-list {
+  list-style: none;
+}
+
+.feature-four-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.feature-four-item p {
+  font-weight: 400;
+}
+
+/* Appointment */
+
+.appointment {
+  text-align: center;
+}
+
+.appointment h2 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.appointment p {
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Main footer */
+
+.main-footer {
+  background-color: var(--special-white);
+}
+
+.footer-contacts {
+  text-align: center;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-phone {
+  color: inherit;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+/* Social button */
+
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover {
+  background-color: var(--special-blue-dark);
+}
+
+.social-button:active {
+  background-color: var(--special-blue-middle);
+}
+
+/* Copyright */
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright a {
+  color: inherit;
+}
+
+.copyright-button {
+  color: var(--special-black);
+}
+
+.copyright-button:hover {
+  color: var(--special-blue-transparent)
+}
+
+.copyright-button:active {
+  color: var(--special-gray-transparent);
+}
