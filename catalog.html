@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>Каталог Седона</title>
@@ -16,14 +16,14 @@
 
   </head>
 
-  <body>
+  <body class="page-body">
 
-    <header>
-      <nav>
-        <a href="index.html">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -37,7 +37,7 @@
       <h1>Гостиницы</h1>
       <img src="https://via.placeholder.com/150x100" alt="Размытое фото природы Седоны">
 
-      <section>
+      <section class="filter">
         <h2>Фильтр гостиниц</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
@@ -76,25 +76,25 @@
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-            <input type="number" name="min-price" id="filter-min-price" placeholder="От 0">
-            <input type="number" name="max-price" id="filter-max-price" placeholder="До 3000">
+            <input class="min-priсe" type="number" name="min-price" id="filter-min-price" placeholder="От 0">
+            <input class="max-priсe" type="number" name="max-price" id="filter-max-price" placeholder="До 3000">
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button-show-options" type="submit">Показать</button>
         </form>
       </section>
 
-      <section>
+      <section class="results">
         <h2>Найдено:3</h2>
         <p>Сортировка:</p>
-        <p><a href="">По цене</a></p>
-        <p><a href="">По типу</a></p>
-        <p><a href="">По рейтингу</a></p>
+        <p><a href="#">По цене</a></p>
+        <p><a href="#">По типу</a></p>
+        <p><a href="#">По рейтингу</a></p>
       </section>
 
-      <section>
+      <section class="catalog">
         <h2>Список гостиниц</h2>
-        <ul>
-          <li>
+        <ul class="catalog-list">
+          <li class="catalog-item">
             <a href="">
               <h3>Amara Resort & Spa</h3>
               <p>
@@ -103,12 +103,12 @@
             </a>
             <p>Гостиница от 4000 Р</p>
             <p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
             </p>
-            <p>Рейтинг 8.5</p>
+            <p class="rating">Рейтинг 8.5</p>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
               <h3>Desert Quail Inn</h3>
               <p>
@@ -117,12 +117,12 @@
             </a>
             <p>Мотель от 3000 Р</p>
             <p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
             </p>
-            <p>Рейтинг 8.9</p>
+            <p class="rating">Рейтинг 8.9</p>
           </li>
-          <li>
+          <li class="catalog-item">
             <a href="">
               <h3>Villas at Poco Diablo</h3>
               <p>
@@ -131,35 +131,35 @@
             </a>
             <p>Апартаменты от 2000 Р</p>
             <p>
-              <button type="button">Подробнее</button>
-              <button type="button">Забронировать</button>
+              <button class="button-details" type="button">Подробнее</button>
+              <button class="button-reservation" type="button">Забронировать</button>
             </p>
-            <p>Рейтинг 9.2</p>
+            <p class="rating">Рейтинг 9.2</p>
           </li>
         </ul>
       </section>
     </main>
 
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-contacts">
         <h2>Как с нами связаться</h2>
         <p>#visitSEDONA<br>
-        тел.: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+        тел.: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
         </p>
       </section>
 
-      <section>
+      <section class="footer-social">
         <h2>Социальные сети</h2>
         <ul>
-          <li><a href="#">Твиттер</a></li>
-          <li><a href="#">Фейсбук</a></li>
-          <li><a href="#">Ютуб</a></li>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
         </ul>
       </section>
 
-      <section>
+      <section class="footer-copyright">
         <h2>Разработчик</h2>
-        <p>Разработано:<a href="https://htmlacademy.ru">HTML Academy</a></p>
+        <p>Разработано:<a class="copyright-button" href="https://htmlacademy.ru">HTML Academy</a></p>
       </section>
     </footer>
   </body>

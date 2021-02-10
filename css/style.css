@@ -11,13 +11,13 @@
   --special-brown-dark: #503E33;
   --special-blue-dark: #669EC0;
   --special-blue-middle: #5496BD;
+  --special-extra-black: #333333;
+  --special-gray: #666666;
+  --special-black: rgba(35, 31, 32, 1);
+  --special-blue: rgba(129, 179, 210, 1);
+  --special-gray: rgba(189, 187, 188, 1);
+  --special-black-transparent: rgba(0, 0, 0, 0.3);
   --special-white-transparent: rgba(255, 255, 255, 0.9);
-  --special-black-transparent: rgba(35, 31, 32, 1);
-  --special-blue-transparent: rgba(129, 179, 210, 1);
-  --special-gray-transparent: rgba(189, 187, 188, 1);
-
-
-
 }
 
 body {
@@ -216,13 +216,159 @@ img {
 }
 
 .copyright-button {
-  color: var(--special-black);
+  color: var(--special-black-transparent);
 }
 
 .copyright-button:hover {
-  color: var(--special-blue-transparent)
+  color: var(--special-blue)
 }
 
 .copyright-button:active {
-  color: var(--special-gray-transparent);
+  color: var(--special-gray);
+}
+
+/* Filters */
+
+.filter {
+  color: var(--basic-white);
+  background-color: var(--special-brown-light); /*Для контраста текста*/
+}
+
+.filter legend {
+  font-size: 16px;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter label {
+  font-weight: normal;
+}
+
+.min-priсe {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.max-priсe {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.button-show-options {
+  font:inherit;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  background-color: transparent;
+
+}
+
+.button-show-options:hover {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Results */
+
+.results a {
+  color: var(--special-black-transparent)
+}
+
+.results a:hover {
+  color: var(--basic-blue);
+}
+
+.results a:active {
+  color: var(--basic-black);
+}
+
+.results h2 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.results p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+/* Catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+.catalog-item a:hover {
+  color: var(--basic-blue);
+}
+
+.catalog-item a:active {
+  color: var(--special-black-transparent);
+}
+
+.catalog h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.catalog-item p {
+  font-weight: 400;
+  color: var(--special-extra-black)
+}
+
+.button-details {
+  font:inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+  border: none;
+}
+
+.button-details:hover {
+  background-color: var(--special-blue-dark);
+}
+
+.button-details:active {
+  color: var(--special-black-transparent);
+  background-color: var(--special-blue-middle);
+}
+
+.button-reservation {
+  font:inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-brown);
+  border: none;
+}
+
+.button-reservation:hover {
+  background-color: var(--special-brown-light);
+}
+
+.button-reservation:active {
+  color: var(--special-black-transparent);
+  background-color: var(--special-brown-dark);
+}
+
+.catalog-item .rating {
+  color: var(--special-gray);
 }
