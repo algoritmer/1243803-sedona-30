@@ -18,7 +18,7 @@
 
   <body class="page-body">
 
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
@@ -32,23 +32,32 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
 
-      <p>Welcome - to the gorgeous -</p><br>
-      <h1>Седона</h1><br>
-      <p>"Because the Grand Canyon sucks!"</p>
-      <img src="https://via.placeholder.com/150x100" alt="Фото природы Седоны">
+      <div class="main-greeting">
+        <div class="greeting">
+          <p>Welcome - to the gorgeous -</p><br>
+          <h1>Седона</h1><br>
+          <p>"Because the Grand Canyon sucks!"</p>
+          <img src="https://via.placeholder.com/150x100" alt="Фото природы Седоны">
+        </div>
 
-      <section class="about-us">
-        <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </section>
+
+        <section class="about-us">
+          <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </section>
+      </div>
 
       <section class="feature-one">
-        <h2>Настоящий городок</h2>
-        <p>-№1-<br>
-        Седона - не атракцион для туристов. Там течёт своя жизнь</p>
-        <img src="https://via.placeholder.com/150x100" alt="Фото города Седона">
+        <div class="feature-one-paragraph">
+          <h2>Настоящий городок</h2>
+          <p>-№1-<br>
+          Седона - не атракцион для туристов. Там течёт своя жизнь</p>
+        </div>
+        <div class="feature-one-img">
+          <img src="https://via.placeholder.com/150x100" alt="Фото города Седона">
+      </div>
       </section>
 
       <section class="feature-two">
@@ -69,10 +78,14 @@
       </section>
 
       <section class="feature-three">
-        <h2>Там есть мост Дьявола</h2>
-        <p>-№2-<br>
-        Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <img src="https://via.placeholder.com/150x100" alt="Фото моста Дьявола">
+        <div class="feature-three-paragraph">
+          <h2>Там есть мост Дьявола</h2>
+          <p>-№2-<br>
+          Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <div class="feature-three-img">
+          <img src="https://via.placeholder.com/150x100" alt="Фото моста Дьявола">
+        </div>
       </section>
 
       <section class="feature-four">
@@ -96,8 +109,10 @@
       </section>
 
       <section class="appointment">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <div class="appointment-paragraph">
+          <h2>Заинтересовались?</h2>
+          <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        </div>
         <!-- Здесь будет форма записи -->
       </section>
 
@@ -110,10 +125,10 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-contacts">
-        <h2>Как с нами связаться</h2>
-        <p>#visitSEDONA<br>
+       <h2>Как с нами связаться</h2>
+       <p>#visitSEDONA<br>
         тел.: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
         </p>
       </section>
