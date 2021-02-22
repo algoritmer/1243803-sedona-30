@@ -18,7 +18,7 @@
 
   <body class="page-body">
 
-    <header class="main-header">
+    <header class="main-header container">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="Логотип сайта Седона">
@@ -32,54 +32,55 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
 
       <h1>Гостиницы</h1>
-      <img src="https://via.placeholder.com/150x100" alt="Размытое фото природы Седоны">
 
       <section class="filter">
-        <h2>Фильтр гостиниц</h2>
+      <h2>Фильтр гостиниц</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
-            <legend>Инфраструктура:</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-                <label for="filter-swimming-pool">Бассейн</label>
-              </li>
-              <li>
-                <input type="checkbox" name="parking" id="filter-parking">
-                <label for="filter-parking">Парковка</label>
-              </li>
-              <li>
-                <input type="checkbox" name="wi-fi" id="filter-wi-fi">
-                <label for="filter-wi-fi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Тип жилья</legend>
-            <ul>
-              <li>
-                <input type="checkbox" name="hotel" id="filter-hotel" checked>
-                <label for="filter-hotel">Гостиница</label>
-              </li>
-              <li>
-                <input type="checkbox" name="motel" id="filter-motel" checked>
-                <label for="filter-motel">Мотель</label>
-              </li>
-              <li>
-                <input type="checkbox" name="apartments" id="filter-apartments" checked>
-                <label for="filter-apartments">Апартаменты</label>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Стоимость в сутки (Р):</legend>
-            <input class="min-priсe" type="number" name="min-price" id="filter-min-price" placeholder="От 0">
-            <input class="max-priсe" type="number" name="max-price" id="filter-max-price" placeholder="До 3000">
-          </fieldset>
-          <button class="button-show-options" type="submit">Показать</button>
+          <div class="filter-list">
+            <fieldset class="infrastructure">
+              <legend>Инфраструктура:</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+                  <label for="filter-swimming-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" id="filter-parking">
+                  <label for="filter-parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                  <label for="filter-wi-fi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="type-housing">
+              <legend>Тип жилья</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                  <label for="filter-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" id="filter-motel" checked>
+                  <label for="filter-motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                  <label for="filter-apartments">Апартаменты</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="cost">
+              <legend>Стоимость в сутки (Р):</legend>
+              <input class="min-priсe" type="number" name="min-price" id="filter-min-price" placeholder="От 0">
+              <input class="max-priсe" type="number" name="max-price" id="filter-max-price" placeholder="До 3000">
+              <button class="button-show-options" type="submit">Показать</button>
+            </fieldset>
+          </div>
         </form>
       </section>
 
@@ -140,7 +141,7 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-contacts">
         <h2>Как с нами связаться</h2>
         <p>#visitSEDONA<br>
