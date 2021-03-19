@@ -127,10 +127,10 @@ img {
 
 .site-navigation a {
   color: var(--basic-black);
-  display: block;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: var(--special-blue-dark)
 }
 
@@ -157,6 +157,7 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
+  position: relative;
 }
 
 /* Main greeting */
@@ -444,6 +445,8 @@ img {
 
 .appointment .appointment-source {
   position: relative;
+  font: inherit;
+  text-transform: uppercase;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
@@ -451,9 +454,12 @@ img {
   padding: 30px 0 30px 0;
   color: var(--basic-white);
   background-color: var(--basic-brown);
+  border: none;
+  outline: none;
 }
 
-.appointment-source:hover {
+.appointment-source:hover,
+.appointment-source:focus {
   background-color: var(--special-brown-light);
 }
 
@@ -488,7 +494,7 @@ img {
   margin-right: 20px;
 }
 
-.appointment-item-date-in label::after {
+.appointment-item-date-in .appointment-item-date-button {
   content: "";
   position: absolute;
   top: 62px;
@@ -499,22 +505,22 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   border: 0;
+  outline: none;
 }
 
-.appointment-item-date-in label:hover:after,
-.appointment-item-date-out label:hover:after {
+.appointment-item-date-in .appointment-item-date-button:hover,
+.appointment-item-date-in .appointment-item-date-button:focus {
   background-image: url(../img/calendar-middle.svg);
 }
 
-.appointment-item-date-in label:active:after,
-.appointment-item-date-out label:active:after {
+.appointment-item-date-in .appointment-item-date-button:active {
   background-image: url(../img/calendar-high.svg);
 }
 
-.appointment-item-date-out label::after {
+.appointment-item-date-out .appointment-item-date-button {
   content: "";
   position: absolute;
-  top: 129px;
+  top: 130px;
   left: 482px;
   width: 27px;
   height: 23px;
@@ -522,6 +528,16 @@ img {
   background-repeat: no-repeat;
   background-position: 0 0;
   border: 0;
+  outline: none;
+}
+
+.appointment-item-date-out .appointment-item-date-button:hover,
+.appointment-item-date-out .appointment-item-date-button:focus {
+  background-image: url(../img/calendar-middle.svg);
+}
+
+.appointment-item-date-out .appointment-item-date-button:active {
+  background-image: url(../img/calendar-high.svg);
 }
 
 .appointment-item-date-out {
@@ -554,6 +570,10 @@ img {
   background: var(--special-gray-lighter);
 }
 
+.appointment-item input:focus {
+  background: var(--special-gray-lighter);
+}
+
 .appointment-item input:active {
   background: var(--basic-white);
   outline: 2px solid var(--special-gray-super-light);
@@ -575,6 +595,7 @@ img {
 .appointment-item-adult input {
   width: 112px;
   height: 38px;
+  text-align: center;
 }
 
 .appointment-item-adult input:active {
@@ -584,6 +605,7 @@ img {
 .appointment-item-kids input {
   width: 111px;
   height: 38px;
+  text-align: center;
 }
 
 .appointment-item-kids input:active {
@@ -698,7 +720,8 @@ img {
   outline: none;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   background-color: var(--special-blue-dark);
 }
 
@@ -732,9 +755,18 @@ img {
   background-color: var(--special-white);
 }
 
+.main-footer-container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  top: 2642px;
+  background: var(--special-white-transparent);
+}
+
 .footer-contacts {
   width: 350px;
-  padding-top: 18px;
+  padding-top: 22px;
   text-align: center;
   font-size: 21px;
   line-height: 26px;
@@ -752,7 +784,7 @@ img {
 }
 
 .footer-social {
-  padding-top: 32px;
+  padding-top: 37px;
   width: 350px;
   text-align: center;
 }
@@ -820,7 +852,7 @@ img {
 
 .copyright-button {
   width: 115px;
-  height: 41px;
+  height: 40px;
   color: var(--special-black-transparent);
 }
 
