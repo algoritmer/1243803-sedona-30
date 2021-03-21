@@ -456,6 +456,7 @@ img {
   background-color: var(--basic-brown);
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .appointment-source:hover,
@@ -468,7 +469,7 @@ img {
   background-color: var(--special-brown-dark);
 }
 
-.appointment-form {
+.appointment-form-show {
   position: absolute;
   display: flex;
   flex-wrap: wrap;
@@ -480,6 +481,11 @@ img {
   padding-top: 54px;
   background-color: var(--basic-white);
   box-shadow: 0px 5px 15px var(--special-black-white);
+  animation: bounce 0.6s;
+}
+
+.appointment-form-clos {
+  display: none;
 }
 
 .appointment-item {
@@ -1443,4 +1449,50 @@ img {
 .button-reservation:active {
   color: var(--special-white-transparent-light);
   background-color: var(--special-brown-dark);
+}
+
+/* Animations*/
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.appointment-form-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  70% {
+    transform: translateY(25px);
+  }
+
+  90% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

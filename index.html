@@ -110,24 +110,24 @@
           <p class="appointment-info">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <button class="appointment-source" type="button">Поиск гостиницы в Седоне</button>
-          <form class="appointment-form" action="https://echo.htmlacademy.ru" method="get" target="_blank">
+          <form class="appointment-form appointment-form-clos" action="https://echo.htmlacademy.ru" method="get" target="_blank">
             <div class="appointment-item appointment-item-date-in">
               <label for="appointment-date">Дата заезда:</label>
-              <input id="appointment-date" type="text" name="date-in" placeholder="24 апреля 2017">
+              <input class="appointment-date-in" id="appointment-date" type="text" name="date-in" placeholder="24 апреля 2017">
               <button class="appointment-item-date-button" type="button" aria-label="Открыть календарь"></button>
             </div>
             <div class="appointment-item appointment-item-date-out">
               <label for="appointment-time">Дата выезда:</label>
-              <input id="appointment-time" type="text" name="date-out" placeholder="4 июля 2017">
+              <input class="appointment-date-out" id="appointment-time" type="text" name="date-out" placeholder="4 июля 2017">
               <button class="appointment-item-date-button" type="button" aria-label="Открыть календарь"></button>
             </div>
             <div class="appointment-item appointment-item-adult">
               <label for="appointment-text">Взрослые:</label>
-              <input id="appointment-text" type="text" name="adult" placeholder="2">
+              <input class="appointment-adult" id="appointment-text" type="text" name="adult" placeholder="2">
             </div>
             <div class="appointment-item appointment-item-kids">
               <label for="appointment-name">Дети:</label>
-              <input id="appointment-name" type="text" name="kids" placeholder="0">
+              <input class="appointment-kids" id="appointment-name" type="text" name="kids" placeholder="0">
             </div>
             <button class="button" type="submit" aria-label="Начать поиск гостинниц в Седоне">Найти</button>
           </form>
@@ -196,5 +196,8 @@
         </section>
       </footer>
     </div>
+
+    <script src="js/script.min.js"></script>
+
   </body>
 </html>
