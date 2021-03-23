@@ -9,8 +9,10 @@
 
   --special-brown-light: #604E43;
   --special-brown-dark: #503E33;
+  --special-brown-extra: #967E7C;
   --special-blue-dark: #669EC0;
   --special-blue-middle: #5496BD;
+  --special-blue-high: #DBE9F2;
   --special-extra-black: #333333;
   --special-gray-lighter: #EBEBEB;
   --special-gray-light: #666666;
@@ -125,6 +127,18 @@ img {
   text-align: right;
 }
 
+.site-navigation :nth-child(6) {
+  margin-right: auto;
+}
+
+.site-navigation :nth-child(7) {
+  text-align: right;
+}
+
+.site-navigation :nth-child(8) {
+  text-align: right;
+}
+
 .site-navigation a {
   color: var(--basic-black);
 }
@@ -169,8 +183,10 @@ img {
 }
 
 .greeting {
+  position: relative;
   width: 1200px;
   height: 509px;
+  background-color: var(--special-blue-high);
   background-image: url(../img/index_background_photo.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -182,10 +198,15 @@ img {
   padding-bottom: 21px;
 }
 
-.greeting :nth-child(2) {
-  padding: 0;
-  margin: 0;
-  margin-top: auto;
+.greeting::after {
+  content: "";
+  position: absolute;
+  top: 453px;
+  left: 0;
+  width: 1200px;
+  height: 57px;
+  background-image: url(../img/shape_background_index.svg);
+  background-repeat: no-repeat;
 }
 
 /* About us */
@@ -205,6 +226,7 @@ img {
 }
 
 .about-us p {
+  padding: 0 20px;
   font-weight: 400;
   line-height: 26px;
 }
@@ -230,6 +252,8 @@ img {
 .feature-one p {
   font-weight: 400;
   margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-bottom: 24px;
   text-align: center;
 }
@@ -316,6 +340,8 @@ img {
 
 .feature-two-item p {
   font-weight: 400;
+  padding-left: 45px;
+  padding-right: 45px;
   margin: 0;
 }
 
@@ -629,85 +655,98 @@ img {
   margin-right: 20px;
 }
 
-.appointment-item-adult label::before {
+.button-minus-adult {
   content: "";
   position: absolute;
   top: 209px;
   left: 180px;
   width: 12px;
-  height: 23px;
+  height: 5px;
   background-image: url(../img/minus-low.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   border: 0;
+  outline: none;
 }
 
-.appointment-item-adult label:hover:before,
-.appointment-item-kids label:hover:before {
+.button-minus-adult:hover,
+.button-minus-adult:focus {
   background-image: url(../img/minus-middle.svg);
 }
 
-.appointment-item-adult label::after {
+.button-minus-adult:active {
+  background-image: url(../img/minus-high.svg);
+}
+
+.button-plus-adult {
   content: "";
   position: absolute;
   top: 205px;
   left: 254px;
-  width: 27px;
-  height: 23px;
+  width: 12px;
+  height: 12px;
   background-image: url(../img/plus-low.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: transparent;
   border: 0;
+  outline: none;
 }
 
-.appointment-item-adult label:hover:after {
+.button-plus-adult:hover,
+.button-plus-adult:focus {
   background-image: url(../img/plus-middle.svg);
 }
 
-.appointment-item-adult label:active:after {
+.button-plus-adult:active {
   background-image: url(../img/plus-high.svg);
 }
 
-.appointment-item-adult label:active:before {
-  background-image: url(../img/minus-high.svg);
-}
-
-.appointment-item-kids label::before {
+.button-minus-kids {
   content: "";
   position: absolute;
   top: 209px;
   left: 410px;
   width: 12px;
-  height: 23px;
+  height: 5px;
   background-image: url(../img/minus-low.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   border: 0;
+  outline: none;
 }
 
-.appointment-item-kids label::after {
+.button-minus-kids:hover,
+.button-minus-kids:focus {
+  background-image: url(../img/minus-middle.svg);
+}
+
+.button-minus-kids:active {
+  background-image: url(../img/minus-high.svg);
+}
+
+.button-plus-kids {
   content: "";
   position: absolute;
   top: 205px;
   left: 488px;
-  width: 27px;
-  height: 23px;
+  width: 12px;
+  height: 12px;
   background-image: url(../img/plus-low.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-color: transparent;
   border: 0;
+  outline: none;
 }
 
-.appointment-item-kids label:hover:after {
+.button-plus-kids:hover,
+.button-plus-kids:focus {
   background-image: url(../img/plus-middle.svg);
 }
 
-.appointment-item-kids label:active:after {
+.button-plus-kids:active {
   background-image: url(../img/plus-high.svg);
-}
-
-.appointment-item-kids label:active::before {
-  background-image: url(../img/minus-high.svg);
 }
 
 .button {
@@ -745,6 +784,19 @@ img {
 .map p {
   margin: 0;
   padding: 0;
+}
+
+.map img {
+  width: 1199px;
+  height: 594px;
+}
+
+.map .interactive-map {
+  position: absolute;
+  width: 1199px;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
 }
 
 /* Main footer */
@@ -881,6 +933,7 @@ img {
 
 .filter {
   color: var(--basic-white);
+  background-color: var(--special-brown-extra);
   background-image: url(../img/catalog_background_photo.jpg);
   background-position: top center;
   background-repeat: repeat;
@@ -929,7 +982,6 @@ img {
 
 .filter-option label {
   position: relative;
-  display: block;
   cursor: pointer;
   user-select: none;
 }
@@ -943,55 +995,25 @@ img {
   position: absolute;
   left: -42px;
   top: 0;
-  width: 19px;
-  height: 19px;
-  border: 2px solid var(--basic-white);
-  border-radius: 3px;
-}
-
-.filter-input-checkbox:disabled + label::before {
-  content: "";
-  position: absolute;
-  left: -42px;
-  top: 0;
-  width: 19px;
-  height: 19px;
-  border: 2px solid var(--special-gray-middle);
-  border-radius: 3px;
-}
-
-.filter-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -42px;
-  width: 27px;
+  width: 23px;
   height: 23px;
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  border: 0;
-}
-
-.filter-input-checkbox:checked:disabled + label::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -42px;
-  width: 27px;
-  height: 23px;
-  background-image: url(../img/checkbox-on-disabled.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  border: 0;
-}
-
-.filter-input-checkbox:checked:disabled + label::before {
   border: 0;
 }
 
 .filter-input-checkbox:checked + label::before {
-  border: 0;
+  width: 27px;
+  background-image: url(../img/checkbox-on.svg);
+}
+
+.filter-input-checkbox:disabled + label::before {
+  background-image: url(../img/checkbox-on-disabled.svg);
+}
+
+.filter-input-checkbox:focus + label {
+  outline: 2px dotted var(--basic-white);
 }
 
 .cost {
@@ -1153,6 +1175,7 @@ img {
 
 .results {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   margin-top: 29px;

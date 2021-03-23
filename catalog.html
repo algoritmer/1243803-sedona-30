@@ -81,15 +81,17 @@
                 <legend>Стоимость в сутки (Р):</legend>
                 <div class="cost-prise">
                 <input class="min-priсe" type="text" name="min-price" id="filter-min-price" placeholder="От 0">
+                <label class="visually-hidden" for="filter-min-price">Минимальная цена</label>
                 <input class="max-priсe" type="text" name="max-price" id="filter-max-price" placeholder="До 3000">
+                <label class="visually-hidden" for="filter-max-price">Максимальная цена</label>
                 </div>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
                       <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="toggle toggle-min" tabindex="0" aria-label="Переместить ползунок минимальной цены"></div>
+                    <div class="toggle toggle-max" tabindex="0" aria-label="Переместить ползунок максимальной цены"></div>
                   </div>
                 </div>
                 <button class="button-show-options" type="submit" aria-label="Открыть список готинниц по выбранным параметрам">Показать</button>
@@ -105,8 +107,8 @@
           <p><a class="results-type" href="#">По типу</a></p>
           <p><a class="results-rating" href="#">По рейтингу</a></p>
           <div class="results-sorting-triangle">
-            <button class="results-sorting-triangle-up" type="button" aria-label="Сортировка от меньшего к большему" ></button>
-            <button class="results-sorting-triangle-down" type="button" aria-label="Сортировка от большего к меньшему"></button>
+            <a class="results-sorting-triangle-up" href="#" aria-label="Сортировка от меньшего к большему"></a>
+            <a class="results-sorting-triangle-down" href="#" aria-label="Сортировка от большего к меньшему"></a>
           </div>
         </section>
 
